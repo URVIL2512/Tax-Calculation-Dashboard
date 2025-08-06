@@ -1,44 +1,51 @@
 Tax Calculation Dashboard
-A modern, responsive web application built with React and Material-UI to help calculate Indian income tax liabilities under both the Old and New Tax Regimes. This platform is focused on accuracy, performance, and a clean user experience.
+A modern React-based web application for calculating Indian income tax liability under both the Old and New Tax Regimes, featuring a responsive UI, real-time computations, and downloadable tax reports.
 
-Overview
-The Tax Calculation Dashboard is a comprehensive tool for Indian taxpayers. It allows users to:
+🚀 Features
+Dual Tax Regime Support
 
-Calculate taxes under both regimes
+Calculate taxes as per both Old and New Indian income tax regimes
 
-View detailed deductions
+Side-by-side comparison of final tax liabilities
 
-Generate clear, exportable tax reports
+Interactive Form Wizard
 
-Plan financials with confidence
+Multi-step form interface for inputting income and deduction details
 
-Key Features
-Regime Comparison
-Compare tax liability under Old and New tax regimes.
-
-Step-by-Step Tax Input
-Guided multi-step forms with real-time validation and helpful tooltips.
+Real-time input validation with tooltips
 
 Comprehensive Deductions
-Supports standard deductions like 80C, 80D, 80TTA, HRA, LTA, etc.
 
-Real-Time Calculations
-Automatically updates tax summary based on input.
+Supports popular deductions: 80C, 80D, 80TTA, HRA, LTA, and more
 
-Modern UI
-Built using Material-UI (MUI v5) and styled with Tailwind CSS, Emotion, and Styled Components.
+Auto-applied standard deduction
+
+Live Tax Calculation
+
+Instant calculation updates as values change
+
+Accurate breakdown of components like taxable income, deductions, and final payable tax
 
 Visual Reports & Charts
-Detailed breakdowns using Recharts and exportable reports with jsPDF.
 
-Tech Stack
-Frontend: React 18 with TypeScript
+Tax summary displayed via interactive Recharts graphs
+
+Generate downloadable PDF tax reports using jsPDF
+
+Modern UI/UX
+
+Built with Material-UI (MUI v5), Tailwind CSS, Emotion, and Styled Components
+
+Clean, mobile-friendly interface
+
+🛠️ Technology Stack
+Frontend: React 18 + TypeScript
 
 UI Framework: Material-UI (MUI v5), Tailwind CSS
 
-Styling: Emotion, Styled Components
+Styling: Emotion + Styled Components
 
-Charts: Recharts
+Data Visualization: Recharts
 
 PDF Generation: jsPDF
 
@@ -46,66 +53,73 @@ Icons: Lucide React Icons
 
 Build Tool: Create React App
 
-How It Works
-Select Tax Regime
-Choose Old or New regime based on your salary structure.
-
-Enter Income Details
-Input Basic Salary, HRA, LTA, and other components.
-
-Add Deductions
-Apply eligible deductions (80C, 80D, etc.).
-
-View Tax Summary
-Instantly see calculated tax under both regimes.
-
-Generate Report
-Download a professional PDF summary of your tax computation.
-
-Target Audience
-Salaried professionals in India
-
-Chartered Accountants and tax consultants
-
-Financial advisors
-
-Students learning Indian tax system
-
-Getting Started
-Prerequisites
-Node.js (v14 or higher)
+📋 Prerequisites
+Node.js (version 14 or higher)
 
 npm or yarn
 
-# Clone the repository
+Git (for repository cloning)
+
+🚀 Quick Start
+Method 1: Clone Repository
+bash
+Copy
+Edit
 git clone https://github.com/URVIL2512/Tax-Calculation-Dashboard.git
 cd Tax-Calculation-Dashboard
-
-# Install dependencies
 npm install
-
-# Start development server
 npm start
-Open your browser and navigate to:
-http://localhost:3000
+Visit: http://localhost:3000 in your browser
 
-🧪 Available Commands
-npm start – Start the app in development mode
+Method 2: Download ZIP
+Download the ZIP from GitHub
 
-npm run build – Build the app for production
+Extract the folder
 
-npm test – Run unit tests (if configured)
+Open terminal in the extracted folder
 
-npm eject – Eject CRA setup (use with caution)
-
-📦 Production Build
-To build the application for deployment:
+Run the following:
 
 bash
 Copy
 Edit
-npm run build
-This will generate a build/ folder with optimized static assets.
+npm install
+npm start
+🎯 How to Use
+Launch the app with npm start
+
+Choose either Old or New tax regime
+
+Enter salary details like Basic, HRA, LTA, and allowances
+
+Add deductions like 80C, 80D, etc.
+
+View tax summary and compare both regimes
+
+Generate and download the PDF tax report
+
+📱 Feature Modules
+Old vs New Regime Comparison
+
+Side-by-side tax liability comparison
+
+Helps users make informed financial decisions
+
+Income & Deductions Management
+
+Salary input: Basic, HRA, LTA, Other Allowances
+
+Deduction input: 80C, 80D, 80TTA, HRA exemption, etc.
+
+Graphical Visualization
+
+Tax and income components visualized using charts
+
+Easy-to-understand income distribution graph
+
+Report Generation
+
+Automatically generate a structured PDF report for documentation or consultation
 
 📹 Demo
 Watch the demo video showcasing the app in action:
