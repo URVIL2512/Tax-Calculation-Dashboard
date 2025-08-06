@@ -1,0 +1,3 @@
+static_site:
+  build_command: npm install && npm run build
+  publish_dir: build 
