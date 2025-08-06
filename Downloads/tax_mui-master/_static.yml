@@ -1,3 +1,2 @@
-static_site:
-  build_command: npm install && npm run build
-  publish_dir: build 
+build_command: cd tax_mui && npm install && npm run build
+publish_dir: tax_mui/build
