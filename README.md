@@ -1,37 +1,37 @@
 Tax Calculation Dashboard
-A modern, responsive web application built using React and Material-UI to calculate Indian income tax liabilities under both the Old and New Tax Regimes. The platform is designed with a focus on accuracy, performance, and clean user experience.
+A modern, responsive web application built with React and Material-UI to help calculate Indian income tax liabilities under both the Old and New Tax Regimes. This platform is focused on accuracy, performance, and a clean user experience.
 
-🚀 Overview
-The Tax Calculation Dashboard serves as a complete tool for Indian taxpayers, allowing them to:
+Overview
+The Tax Calculation Dashboard is a comprehensive tool for Indian taxpayers. It allows users to:
 
-Calculate tax obligations under both regimes
+Calculate taxes under both regimes
 
 View detailed deductions
 
-Generate clear tax reports
+Generate clear, exportable tax reports
 
-Plan financial obligations confidently
+Plan financials with confidence
 
-✅ Key Features
+Key Features
 Regime Comparison
-Easily compare tax liabilities under both the Old and New tax regimes.
+Compare tax liability under Old and New tax regimes.
 
 Step-by-Step Tax Input
-Interactive multi-step form with real-time validation and user-friendly guidance.
+Guided multi-step forms with real-time validation and helpful tooltips.
 
 Comprehensive Deductions
-Supports popular deductions like 80C, 80D, 80TTA, HRA, LTA, and more.
+Supports standard deductions like 80C, 80D, 80TTA, HRA, LTA, etc.
 
 Real-Time Calculations
-Get instant tax results as you input salary, exemptions, and deductions.
+Automatically updates tax summary based on input.
 
 Modern UI
-Built with MUI v5 and styled using Tailwind CSS, Emotion, and Styled Components for a responsive and sleek design.
+Built using Material-UI (MUI v5) and styled with Tailwind CSS, Emotion, and Styled Components.
 
 Visual Reports & Charts
-Understand your tax breakdown through dynamic charts (Recharts) and exportable PDFs (via jsPDF).
+Detailed breakdowns using Recharts and exportable reports with jsPDF.
 
-🧱 Tech Stack
+Tech Stack
 Frontend: React 18 with TypeScript
 
 UI Framework: Material-UI (MUI v5), Tailwind CSS
@@ -40,47 +40,43 @@ Styling: Emotion, Styled Components
 
 Charts: Recharts
 
-PDF Reports: jsPDF
+PDF Generation: jsPDF
 
 Icons: Lucide React Icons
 
 Build Tool: Create React App
 
-👨‍💻 How It Works
+How It Works
 Select Tax Regime
-Choose between the Old or New tax regime based on your income structure.
+Choose Old or New regime based on your salary structure.
 
 Enter Income Details
-Input basic salary, HRA, LTA, and other allowances.
+Input Basic Salary, HRA, LTA, and other components.
 
 Add Deductions
-Enter deductions under sections like 80C, 80D, etc.
+Apply eligible deductions (80C, 80D, etc.).
 
 View Tax Summary
-Instantly see tax liability for both regimes with an easy-to-read breakdown.
+Instantly see calculated tax under both regimes.
 
 Generate Report
-Export a professionally formatted PDF report for recordkeeping or consultation.
+Download a professional PDF summary of your tax computation.
 
-👥 Target Audience
+Target Audience
 Salaried professionals in India
 
 Chartered Accountants and tax consultants
 
-Financial planners and advisors
+Financial advisors
 
-Students and learners exploring Indian taxation
+Students learning Indian tax system
 
-🔧 Getting Started
+Getting Started
 Prerequisites
 Node.js (v14 or higher)
 
 npm or yarn
 
-Installation & Setup
-bash
-Copy
-Edit
 # Clone the repository
 git clone https://github.com/URVIL2512/Tax-Calculation-Dashboard.git
 cd Tax-Calculation-Dashboard
