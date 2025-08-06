@@ -2,8 +2,8 @@ services:
   - type: web
     name: tax-calculation-dashboard
     env: static
-    buildCommand: cd tax_mui && npm install && npm run build
-    staticPublishPath: ./tax_mui/build
+    buildCommand: cd tax_mui/tax_mui && npm install && npm run build
+    staticPublishPath: ./tax_mui/tax_mui/build
     routes:
       - type: rewrite
         source: /*
