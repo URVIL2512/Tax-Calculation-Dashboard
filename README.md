@@ -1,10 +1,10 @@
-Tax Calculation Dashboard
+Tax Calculation Dashboard:
 A modern, responsive web application built with React and Material-UI that enables individuals and professionals to calculate income tax liabilities under the Indian Old and New Tax Regimes. Designed for accuracy, performance, and user experience.
 
-🚀 Overview
+🚀 Overview:
 This application provides an end-to-end solution for Indian taxpayers to estimate their tax obligations. With regime comparison, deduction inputs, and detailed breakdowns, users gain clarity and control over their tax planning.
 
-✅ Key Features
+✅ Key Features:
 Regime Comparison:
 Calculate and compare tax liabilities under both Old and New regimes.
 
@@ -95,5 +95,5 @@ This will generate a build/ folder with optimized static assets for deployment.
 
 📹 Demo Video
 Watch a walkthrough of the live application:
-Google Drive Demo Link
+https://drive.google.com/file/d/1U-soig5Z2C2EJoso0jfe8ppta-xQPbwG/view?usp=sharing
 
