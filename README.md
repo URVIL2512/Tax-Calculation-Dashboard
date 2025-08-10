@@ -97,16 +97,3 @@ JWT_SECRET=your_jwt_secret_key
 PORT=5000
 NODE_ENV=development
 ```
-
-## 10. Contributing
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## 11. License
-This project is open source and available under the [MIT License](LICENSE).
-
-## 12. Support
-For support and questions, please open an issue on GitHub or contact the development team.
