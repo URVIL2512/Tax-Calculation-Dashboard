@@ -15,7 +15,7 @@ A modern MERN stack web application for calculating Indian income tax liability 
 ## 3. Technology Stack
 | Layer | Technology |
 |-------|------------|
-| Frontend | React 18, TypeScript, Material-UI (MUI v5), Tailwind CSS, Emotion, Styled Components, Recharts, jsPDF, Lucide React Icons |
+| Frontend | React , TypeScript, Tailwind CSS |
 | Backend | Node.js, Express.js, MongoDB, Mongoose |
 | Auth | JWT (JSON Web Tokens) |
 | API | REST API endpoints for tax calculation and user management |
