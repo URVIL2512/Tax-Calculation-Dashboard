@@ -81,29 +81,11 @@ Enter salary and deductions in the multi-step form
 
 View side-by-side tax liability comparison
 
-Download PDF tax reports
 
 Log in/sign up to save or retrieve past data (if implemented)
 
 7. Project Structure
-bash
-Copy
-Edit
-Tax-Calculation-Dashboard/
-├── backend/               # Node.js/Express API
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── utils/
-│   ├── server.js
-│   └── .env
-├── frontend/              # React frontend
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-├── README.md
-└── package.json           # optional root package.json
+<img width="609" height="469" alt="image" src="https://github.com/user-attachments/assets/43732ad7-0ae0-4a14-9106-53c535e14585" />
 
-Demo Video Link
+
 
