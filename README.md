@@ -98,5 +98,6 @@ PORT=5000
 NODE_ENV=development
 ```
 
-##10 Demo Video
-https://drive.google.com/file/d/1JMUNe2MYtP-a8kGHn_vTv6N-R76F9ddL/view?usp=sharing
+## 🎥 Demo Video
+[▶ Watch the Demo on Google Drive](https://drive.google.com/file/d/1JMUNe2MYtP-a8kGHn_vTv6N-R76F9ddL/view?usp=sharing)
+
