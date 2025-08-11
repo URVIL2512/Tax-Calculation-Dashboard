@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import axios from 'axios';
+import { api, setAuthToken } from '../lib/api';
 
 interface User {
   id: string;
@@ -39,13 +39,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   // Set up axios default headers when token changes
   useEffect(() => {
-    if (token) {
-      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-      setIsAuthenticated(true);
-    } else {
-      delete axios.defaults.headers.common['Authorization'];
-      setIsAuthenticated(false);
-    }
+    setAuthToken(token);
+    setIsAuthenticated(!!token);
   }, [token]);
 
   // Check if user is authenticated on app load
@@ -53,7 +48,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     const checkAuth = async () => {
       if (token) {
         try {
-          const response = await axios.get('http://localhost:5000/api/auth/profile');
+          const response = await api.get('/api/auth/profile');
           setUser(response.data.user);
           setIsAuthenticated(true);
         } catch (error) {
@@ -74,6 +69,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     setToken(newToken);
     setUser(userData);
     setIsAuthenticated(true);
+    setAuthToken(newToken);
   };
 
   const signup = (newToken: string, userData: User) => {
@@ -81,6 +77,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     setToken(newToken);
     setUser(userData);
     setIsAuthenticated(true);
+    setAuthToken(newToken);
   };
 
   const logout = () => {
@@ -88,6 +85,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     setToken(null);
     setUser(null);
     setIsAuthenticated(false);
+    setAuthToken(null);
   };
 
   const value: AuthContextType = {

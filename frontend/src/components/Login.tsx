@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import { Visibility, VisibilityOff, Email, Lock } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { api } from '../lib/api';
 import { useAuth } from '../context/AuthContext';
 
 const Login: React.FC = () => {
@@ -41,7 +41,7 @@ const Login: React.FC = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const response = await api.post('/api/auth/login', formData);
       
       if (response.data.token) {
         login(response.data.token, response.data.user);

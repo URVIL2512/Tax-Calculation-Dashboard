@@ -33,7 +33,7 @@ import {
   Refresh as RefreshIcon,
   Search as SearchIcon,
 } from '@mui/icons-material';
-import axios from 'axios';
+import { api } from '../lib/api';
 
 interface TaxRecord {
   _id: string;
@@ -81,7 +81,7 @@ const TaxHistory: React.FC = () => {
       if (filters.userName) params.append('userName', filters.userName);
       if (filters.taxRegime) params.append('taxRegime', filters.taxRegime);
 
-      const response = await axios.get(`/api/tax/history?${params}`);
+      const response = await api.get(`/api/tax/history?${params}`);
       
       setRecords(response.data.data);
       setTotalRecords(response.data.pagination.totalRecords);
@@ -94,7 +94,7 @@ const TaxHistory: React.FC = () => {
 
   const handleDeleteRecord = async (id: string) => {
     try {
-      await axios.delete(`/api/tax/${id}`);
+      await api.delete(`/api/tax/${id}`);
       setRecords(prev => prev.filter(record => record._id !== id));
       setTotalRecords(prev => prev - 1);
       setDeleteDialogOpen(false);

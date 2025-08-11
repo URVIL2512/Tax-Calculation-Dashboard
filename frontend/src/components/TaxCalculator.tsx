@@ -23,7 +23,7 @@ import {
   TrendingUp as TrendingUpIcon,
   AccountBalance as AccountBalanceIcon,
 } from '@mui/icons-material';
-import axios from 'axios';
+import { api } from '../lib/api';
 
 interface TaxCalculation {
   userName: string;
@@ -68,7 +68,7 @@ const TaxCalculator: React.FC = () => {
     setError('');
 
     try {
-      const response = await axios.post('/api/tax/calculate', {
+      const response = await api.post('/api/tax/calculate', {
         userName: formData.userName.trim(),
         income: parseFloat(formData.income),
         taxRegime: formData.taxRegime,
