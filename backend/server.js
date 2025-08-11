@@ -14,7 +14,12 @@ const app = express();
 
 // Middleware
 app.use(helmet());
-app.use(cors());
+// Configure CORS to allow the deployed frontend origin
+const allowedOrigin = process.env.FRONTEND_URL || 'http://localhost:3000';
+app.use(cors({
+  origin: allowedOrigin,
+  credentials: true
+}));
 app.use(morgan('combined'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
