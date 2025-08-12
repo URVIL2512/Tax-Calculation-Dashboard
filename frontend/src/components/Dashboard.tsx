@@ -76,43 +76,20 @@ const Dashboard: React.FC = () => {
         // const data = await response.json();
         // setHasCalculations(data.calculations.length > 0);
         
-        // For demo purposes, let's simulate a user with calculations
-        // Change this to true to see the full dashboard
-        setHasCalculations(true);
+        // Check if user actually has calculations from the API
+        // For now, default to false so new users see the welcome screen
+        setHasCalculations(false);
         
-        // If user has calculations, load the full dashboard data
-        if (hasCalculations) {
-          setDashboardData({
-            totalCalculations: 4,
-            totalTaxPaid: 453000,
-            averageTaxRate: 12.3,
-            savingsThisYear: 18500,
-            recentCalculations: [
-              { id: 1, date: '2024-01-15', income: 850000, taxAmount: 125000, regime: 'New', status: 'completed' },
-              { id: 2, date: '2024-01-10', income: 750000, taxAmount: 98000, regime: 'Old', status: 'completed' },
-              { id: 3, date: '2024-01-05', income: 920000, taxAmount: 145000, regime: 'New', status: 'completed' },
-              { id: 4, date: '2024-01-01', income: 680000, taxAmount: 85000, regime: 'Old', status: 'completed' }
-            ],
-            monthlyData: [
-              { month: 'Jan', oldRegime: 183000, newRegime: 270000 },
-              { month: 'Feb', oldRegime: 0, newRegime: 0 },
-              { month: 'Mar', oldRegime: 0, newRegime: 0 },
-              { month: 'Apr', oldRegime: 0, newRegime: 0 },
-              { month: 'May', oldRegime: 0, newRegime: 0 },
-              { month: 'Jun', oldRegime: 0, newRegime: 0 }
-            ],
-            taxBreakdown: [
-              { name: 'Basic Tax', value: 78, color: '#2196F3' },
-              { name: 'Surcharge', value: 12, color: '#FF9800' },
-              { name: 'Education Cess', value: 4, color: '#4CAF50' },
-              { name: 'Rebate', value: 6, color: '#9C27B0' }
-            ],
-            regimeComparison: [
-              { regime: 'Old Regime', taxAmount: 183000, deductions: 150000, effectiveRate: 12.2 },
-              { regime: 'New Regime', taxAmount: 270000, deductions: 0, effectiveRate: 18.0 }
-            ]
-          });
-        }
+        // TODO: Uncomment this when you want to fetch real data from API
+        // if (hasCalculations) {
+        //   // Fetch real dashboard data from /api/tax/stats endpoint
+        //   try {
+        //     const response = await api.get('/api/tax/stats');
+        //     setDashboardData(response.data.data);
+        //   } catch (error) {
+        //     console.error('Error fetching dashboard data:', error);
+        //   }
+        // }
       } catch (error) {
         console.error('Error checking user calculations:', error);
       } finally {
